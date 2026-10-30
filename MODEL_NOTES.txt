@@ -1,0 +1,6 @@
+Model: sklearn.linear_model.LogisticRegression (default notebook settings)
+Target: LoanApproved (0/1)
+Features: Income, LoanAmount, CreditScore, EmploymentType one-hot columns
+Training source: data/Loan_Risk_Working.csv (fallback: cleaned_loan_data.csv)
+Split: train_test_split(test_size=0.2, random_state=42, stratify=y)
+The web app trains and caches the model at first launch unless an optional notebook-exported model exists.
